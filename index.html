@@ -35,4 +35,35 @@
         opacity: 0;
         font-size: 2.2rem;
         margin-top: 20px;
-        transi
+        transition: opacity 2s ease;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Úvodné srdiečko -->
+<img id="heart" src="42d7e392-fe98-4464-85c7-6edfc8acc739.jpg" alt="Srdiečko">
+
+<!-- Text po zmiznutí obrázka -->
+<div id="text">Navždy v mojom srdiečku 🌹</div>
+
+<script>
+setTimeout(() => {
+    let heart = document.getElementById("heart");
+    let text = document.getElementById("text");
+
+    // srdiečko zmizne
+    heart.style.opacity = "0";
+    heart.style.transform = "scale(0.5)";
+
+    // po chvíli ukáž text
+    setTimeout(() => {
+        text.style.opacity = "1";
+    }, 800);
+
+}, 3000); // počká 3 sekundy
+</script>
+
+</body>
+</html>
