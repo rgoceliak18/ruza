@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pre teba 💝</title>
+<title>Pre teba ❤️</title>
 
 <style>
     body {
@@ -16,15 +16,14 @@
         align-items: center;
         height: 100vh;
         flex-direction: column;
-        overflow: hidden;
         text-align: center;
+        overflow: hidden;
     }
 
-    #gift {
-        width: 220px;
-        cursor: pointer;
-        transition: transform 0.5s ease;
-        animation: float 2s ease-in-out infinite;
+    #heart {
+        width: 260px;
+        animation: float 2.2s ease-in-out infinite;
+        transition: all 1s ease;
     }
 
     @keyframes float {
@@ -32,48 +31,8 @@
         50% { transform: translateY(-10px); }
     }
 
-    #rose {
-        width: 200px;
-        margin-top: 20px;
-        opacity: 0;
-        transform: scale(0.5);
-        transition: all 1.3s ease;
-    }
-
     #text {
         opacity: 0;
-        font-size: 2rem;
+        font-size: 2.2rem;
         margin-top: 20px;
-        transition: opacity 1.5s ease;
-    }
-</style>
-
-</head>
-<body>
-
-<!-- Darček -->
-<img id="gift" src="https://i.imgur.com/3fJ1iLZ.png" alt="Darček" onclick="openGift()">
-
-<!-- Ruža (schovaná) -->
-<img id="rose" src="https://i.imgur.com/WqQxQZK.png" alt="Ruža">
-
-<!-- Text (skrytý) -->
-<div id="text">V mojom srdiečku ❤️</div>
-
-<script>
-function openGift() {
-    let gift = document.getElementById("gift");
-    let rose = document.getElementById("rose");
-    let text = document.getElementById("text");
-
-    // animácia darčeka (zmizne)
-    gift.style.transform = "scale(0)";
-    gift.style.opacity = "0";
-
-    // po chvíli ukáže ružu
-    setTimeout(() => {
-        rose.style.opacity = "1";
-        rose.style.transform = "scale(1)";
-    }, 600);
-
-    // po ďalšej c
+        transi
